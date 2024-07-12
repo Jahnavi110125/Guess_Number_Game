@@ -1,14 +1,12 @@
 let min = 1;
 let max = 100;
 let rand = Math.floor(Math.random()*(max-min+1))+min;
-console.log(rand);
 let attempts = 6;
 
 document.addEventListener("DOMContentLoaded", function() {
 
 document.getElementById("check").onclick = function(){
 let user = parseInt(document.getElementById("numb").value);
-console.log(attempts);
 
 
 if(user > 100 || user < 0){ 
@@ -58,7 +56,6 @@ if(attempts === 0){
 
 document.getElementById("restart").onclick = function(){
     rand = Math.floor(Math.random()*(max-min+1))+min;
-    console.log(rand);
     attempts = 6;
     document.getElementById("sec").style.display = "flex";
     document.getElementById("sec1").style.display = "none";
